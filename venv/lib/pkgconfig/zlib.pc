@@ -1,0 +1,13 @@
+prefix=/home/jyoti/Desktop/all/mlproject/venv
+exec_prefix=/home/jyoti/Desktop/all/mlproject/venv
+libdir=/home/jyoti/Desktop/all/mlproject/venv/lib
+sharedlibdir=/home/jyoti/Desktop/all/mlproject/venv/lib
+includedir=/home/jyoti/Desktop/all/mlproject/venv/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
