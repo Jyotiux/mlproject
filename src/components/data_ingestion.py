@@ -2,7 +2,6 @@ import os
 import sys
 
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), 'src')))
 
 from src.exception import CustomException
 from src.logger  import logging
@@ -47,3 +46,17 @@ class DataIngestion:
 if __name__=="__main__":
     obj=DataIngestion()
     obj.initiate_data_ingestion()
+
+
+
+
+
+# Adjusting the Python Path:
+
+# If you're running the script from within the src/components directory, Python might not recognize the src directory as part of the module path. To fix this, you can adjust the Python path before running the script. Navigate to the mlproject directory and then run your script:
+
+# bash
+# Copy code
+# cd /home/jyoti/Desktop/all/mlproject
+# python -m src.components.data_ingestion
+# By running the script using -m (module) and providing the full module path, Python should be able to locate the modules correctly.
